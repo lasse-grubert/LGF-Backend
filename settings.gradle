@@ -1,0 +1,2 @@
+rootProject.name = 'LGF-Backend'
+include 'controller', 'service', 'repository', 'dto', 'entity','config','app'
