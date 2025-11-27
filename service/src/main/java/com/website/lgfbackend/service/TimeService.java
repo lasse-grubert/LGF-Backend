@@ -11,9 +11,14 @@ public class TimeService {
     private final TimeCalculator timeCalculator = new TimeCalculator();
     private final TimeFormatter timeFormatter = new TimeFormatter();
 
-    public String calculateFinalTime(String t1, String t2, String t3) {
+    public String calculateDepatureTime(String t1, String t2, String t3) {
         int totalMinutes = timeCalculator.calculateTotalMinutes(t1, t2, t3);
         return timeFormatter.formatTime(totalMinutes);
+    }
+
+    public int calculateTotalMinutes(String t1, String t2, String t3) {
+        int totalMinutes = timeCalculator.calculateTotalMinutes(t1, t2, t3);
+        return totalMinutes;
     }
 }
 
