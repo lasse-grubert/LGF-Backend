@@ -1,0 +1,10 @@
+### GET request to example server
+POST http://localhost:8080/time/calculate
+Content-Type: application/json
+
+{
+  "time1": "12:00",
+  "time2": "12:00",
+  "time3": "01:00"
+}
+###

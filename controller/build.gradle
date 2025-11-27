@@ -1,12 +1,6 @@
-plugins {
-    id 'java'
-}
-
 dependencies {
-    implementation platform("org.springframework.boot:spring-boot-dependencies:3.2.5")
-
     implementation project(':service')
     implementation project(':dto')
-    // Spring Boot Web
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
 }
