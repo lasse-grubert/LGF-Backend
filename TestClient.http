@@ -7,4 +7,26 @@ Content-Type: application/json
   "time2": "12:00",
   "time3": "01:00"
 }
-###
+
+### POST
+POST http://localhost:8080/time/table
+Content-Type: application/json
+
+
+[
+  {
+    "rowId": 1,
+    "arrivalTime": "08:00",
+    "depatureTime": "16:00",
+    "pauseTime": "00:30",
+    "totalTime": "07:30",
+    "date": "2025-11-27"
+  }
+]
+
+
+### GET: Lade gespeicherte Daten
+GET http://localhost:8080/time/table
+
+### Delete: Lösche gespeicherte Zeilen der Tabelle anhand der Id
+DELETE http://localhost:8080/time/table/1

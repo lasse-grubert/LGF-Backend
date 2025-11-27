@@ -17,8 +17,9 @@ public class TimeController {
 
     @PostMapping("/calculate")
     public TimeResponseDto calculate(@RequestBody TimeRequestDto request) {
-        String total = timeService.calculateFinalTime(request.getTime1(), request.getTime2(), request.getTime3());
-        return new TimeResponseDto(total);
+        String depatureTime = timeService.calculateDepatureTime(request.getTime1(), request.getTime2(), request.getTime3());
+        int totalMinutes = timeService.calculateTotalMinutes(request.getTime1(), request.getTime2(), request.getTime3());
+        return new TimeResponseDto(depatureTime, totalMinutes);
     }
 }
 

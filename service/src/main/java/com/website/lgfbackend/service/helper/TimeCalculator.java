@@ -8,9 +8,6 @@ public class TimeCalculator {
             totalMinutes += parseToMinutes(time);
 
         }
-        if (totalMinutes > 1440) {
-            return totalMinutes % 1440;
-        }
         return totalMinutes;
     }
 

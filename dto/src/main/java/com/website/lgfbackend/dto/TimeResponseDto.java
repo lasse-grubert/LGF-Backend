@@ -6,8 +6,10 @@ import lombok.Data;
 @Data
 public class TimeResponseDto {
     private String depatureTime;
+    private int totalMinutes;
 
-    public TimeResponseDto(String totalTime) {
-        this.depatureTime = totalTime;
+    public TimeResponseDto(String depatureTime, int totalMinutes) {
+        this.depatureTime = depatureTime;
+        this.totalMinutes = totalMinutes;
     }
 }
